@@ -1,0 +1,9 @@
+# Direct dependencies of scripts/build_strategies_table.py. Everything else in
+# requirements.txt is pulled in by these four and pinned there.
+#
+# check_links.py and update_counts.py deliberately use only the standard
+# library, so the scheduled workflow needs nothing installed.
+numpy
+pandas
+huggingface_hub
+pyarrow  # pandas.read_parquet backend
